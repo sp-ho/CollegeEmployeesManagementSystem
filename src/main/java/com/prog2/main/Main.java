@@ -4,10 +4,6 @@ import java.util.ArrayList;
 
 public class Main {
 
-	/**
-	 * Write your test code below in the main.
-	 *
-	 */
 	public static void main(String[] args) {
 		
 		// create array list of teachers
