@@ -24,9 +24,9 @@ public class UtilityMethods {
 			throw new RuntimeException(e1);
 		} catch (IOException e2) {
 			System.out.println("I/O error");
-//			e2.printStackTrace();
+			e2.printStackTrace();
 		} catch (Exception e3) {
-//			e3.printStackTrace();
+			e3.printStackTrace();
 		}
 	}
 
@@ -34,18 +34,11 @@ public class UtilityMethods {
 	public static ArrayList<Department> deserialization() {
 
 		ArrayList<Department> a = null;
-		// comment line 39 and uncomment line 41-45 on first time running
-//		ArrayList<Department> a = new ArrayList<Department>();
-//		a.add(new Department(1, "Art", new ArrayList<Teacher>(), new ArrayList<Staff>()));
-//		a.add(new Department(2, "Statistics", new ArrayList<Teacher>(), new ArrayList<Staff>()));
-//		a.add(new Department(3, "Engineering", new ArrayList<Teacher>(), new ArrayList<Staff>()));
-//		a.add(new Department(4, "Mechanical", new ArrayList<Teacher>(), new ArrayList<Staff>()));
 		
 		try (FileInputStream fis = new FileInputStream(path)) {
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			System.out.println("In deserialization...");
 			a = (ArrayList<Department>) ois.readObject();
-//			System.out.println(a);
 		} catch (ClassNotFoundException e1) {
 			a = null;
 			e1.printStackTrace();
