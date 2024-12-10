@@ -9,9 +9,6 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
 public class UtilityMethods {
-	// local path on desktop
-//	 static String path = "C:\\Users\\szepi\\Desktop\\test.ser"; 
-
 	// find current working directory for relative path
 //    static String path = System.getProperty("user.dir") + "\\deptDirectory.ser";
 	static String path = "./dd.ser";
