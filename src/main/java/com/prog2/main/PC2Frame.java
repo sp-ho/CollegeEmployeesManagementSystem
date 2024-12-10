@@ -60,11 +60,7 @@ public class PC2Frame extends JFrame {
 	private static ArrayList<Department> departments;
 	private boolean isTeacherDataDisplayed = false;
 	private boolean isStaffDataDisplayed = false;
-//	private static Department deptArt = new Department(1, "Art", new ArrayList<Teacher>(), new ArrayList<Staff>());
-//	private static Department deptStat = new Department(2, "Statistics", new ArrayList<Teacher>(), new ArrayList<Staff>());
-//	private static Department deptEng = new Department(3, "Engineering", new ArrayList<Teacher>(), new ArrayList<Staff>());
-//	private static Department deptMech = new Department(4, "Mechanical", new ArrayList<Teacher>(), new ArrayList<Staff>());
-
+	
 	/**
 	 * Launch the application.
 	 */
@@ -79,24 +75,12 @@ public class PC2Frame extends JFrame {
 				}
 			}
 		});
-
-//		System.out.println(departments.toString());
-//		if(departments == null) 
-//			departments = new ArrayList<Department>();
-//			departments.add(deptArt);
-//			departments.add(deptStat);
-//			departments.add(deptEng);
-//			departments.add(deptMech);
-//			System.out.println(departments.toString());
 	}
 
 	public PC2Frame() {
 		
 		departments = UtilityMethods.deserialization();
-//
-//		if (this.departments == null)
-//			System.out.println("It is null");
-//		System.out.println(departments.toString());
+
 		createContent() ;
 		System.out.println(departments.toString());
 	}
