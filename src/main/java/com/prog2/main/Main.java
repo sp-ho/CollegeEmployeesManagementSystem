@@ -2,11 +2,6 @@ package com.prog2.main;
 
 import java.util.ArrayList;
 
-/**
- * @author adinashby
- *
- */
-
 public class Main {
 
 	/**
